@@ -1,0 +1,203 @@
+body {
+    background: url(template1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%; /* Define a largura para ocupar 100% da tela */
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 6px;
+    font-family: Arial;
+    font-weight: 100; /* Corrigido o erro na definição de font-weight */
+}
+    
+    nav img {
+        max-width: 40px; /* Tamanho máximo dos ícones */
+        height: auto; /* Altura automática dos ícones para manter a proporção */
+        margin-right: 0.1px; /* Espaçamento lateral entre os ícones */
+    }
+    
+    nav a span {
+        margin-top: 5px; /* Espaçamento entre o texto e a imagem */
+    }
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, .6);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        display: none; /* Oculta a div inicialmente */
+    }
+    
+    #roteirizacaoForm.formulario {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Alinha o conteúdo verticalmente no centro */
+    margin-top: 45px;
+    color: #ffffff;
+    }   
+    .form-item {
+        margin-bottom: 5px;
+
+    }
+    
+    .form-item label {
+        display: block;
+        font-weight: bold;
+        font-family: Arial;
+    }
+    .form-item input,
+    .form-item textarea {
+        width: 80%;
+        padding: 5px;
+        border: 1px solid rgba(0,0,0, .6);
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 5px;
+    }
+    .modelo-visita {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #ccc;
+        padding: 5px;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .semanaMês {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #ccc;
+        padding: 5px;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+    }  
+    .semanaMês input[type="radio"] {
+        margin-right: 5px; /* Espaço entre a opção de rádio e o texto */
+    }
+    .form-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .red-button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    /* Estilo para o formulário de Agenda Gestores */
+    #agendaGestoresForm.formulario { 
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        display: flex; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza verticalmente */
+        flex-direction: column; /* Alinha o conteúdo verticalmente no centro */
+        margin-top: 45px;
+        color: #ffffff;
+        }   
+        .form-item {
+            margin-bottom: 5px;
+        }
+        
+        .form-item label {
+            display: block;
+            font-weight: bold;
+            color: white;
+        }
+        .form-item input,
+.form-item textarea {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    background-color:white; /* Defina o fundo inicial como transparente */
+}
+
+        .modelo-visita {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ccc;
+            padding: 5px;
+            width: 80%;
+        }
+        .form-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .red-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    
+    /* Estilo para o formulário de Mapa Clientes Polybalas */
+    #mapaClientesForm.formulario {
+        background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Alinha o conteúdo verticalmente no centro */
+    margin-top: 45px;
+    color: #ffffff;
+    }
+    .mapa {
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px; /* Adjust the height as needed */
+        background-color:  rgba(0,0,0, .6); /* Background color for clarity */
+    }
